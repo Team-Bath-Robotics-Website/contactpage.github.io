@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="contactpage.css">
+        <link rel="icon" href="img/Robotics logo .png" type="image/x-icon">
+        <body>
+            <main class="title">Contact Us</main>
+            <div class="contact-box">
+                <form>
+
+                    <!--honeypot-->
+                    <input type="text" name="_honey" style="display:none;">
+                    <!--disable captcha for spammers-->
+                    <input type="hidden" name="_captcha" value="false">
+                <!-- success page: <input type="hidden" name="_next" value="nameofwebsite.com/sucess.html">-->    
+
+                    <input type="text" class="input-field" placeholder="Your Name" required>
+                    <input type="email" class="input-field" placeholder="Email Address" required>
+                    <input type="tel" class="input-field" placeholder="Contact Number" required>
+                    <input type="text" class="input-field" placeholder="Reason For Contacting Us">
+                    <textarea type="text" class="input-field textarea-field" placeholder="Your Message"></textarea>
+                    <button type="submit"  class="btn" formaction="https://formsubmit.co/info.bathrobotics@gmail.com" formmethod="post">Submit</button>
+                    <button type="reset"  class="btn">Clear</button>
+                </form>
+            </div>
+        </body>
+    </head>
+</html>
